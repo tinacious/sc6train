@@ -54,8 +54,17 @@ h1, h2, h3 {
 	margin-bottom: 0.3em;
 }
 
-h1 {font-size: 2.5em;}
-h2 {font-size: 1.8em;}
+h1 {
+	font-size: 2.5em;
+	span {
+		display: none;
+	}
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
 h3 {font-size: 1.3em;}
 
 a {
@@ -77,12 +86,20 @@ p {
 		margin: 0 auto;
 		padding-top: 1em;
 	}
-	#gotonav {
-		background: @blue;
+	a#gotonav {
+		background: #efefef;
+		color: @mediumgrey;	
 		position: absolute;
-		top: 0;
-		right: 0;
-
+		top: 5px;
+		right: 5px;
+		display: block;
+		padding: 0.3em;
+		text-decoration: none;
+		line-height: 1.3em;
+		text-align: center;
+		border: 1px solid @grey;
+		font-size: 0.7em;
+		font-weight: 700;
 	}
 }
 
@@ -112,34 +129,33 @@ p {
 			text-align: center;
 			background: #efefef;
 		}
+		section {
+			margin-bottom: 4em;
+			display: block;
+		}
 	}
 	#nav {
 		.column(12);
 		background: #efefef;
+		border: 1px solid @grey;
 		margin-top: 2em;
 		margin-bottom: 0.5em;
+		padding: 0.5em 0 0 0;
 		h3 {
 			text-align: center;
-			margin-bottom: 0.5em;
-			// display: none;
 		}
 		ul {
 			display: block;
 			li {				
 				display: block;
-				text-indent: 1em;
+				border-top: 1px solid @grey;
 				a {
-					padding: 0.5em;
+					padding: 0.5em 1.5em;
 					display: block;
 					text-decoration: none;
 					&:hover {
 						background: @blue;
 						color: #fff;
-					}
-				}
-				ul {
-					li {
-						text-indent: 2.5em;
 					}
 				}
 			}
@@ -150,9 +166,10 @@ p {
 #footer {
 	background: url(../img/footer.png) #005da2 repeat-x;
 	color: #fff;
-	padding: 1em 0;
 	p {
 		text-align: center;
+		padding: 1em 0;
+		margin: 0;
 	}
 }
 
@@ -162,35 +179,29 @@ p {
 	body {
 		text-rendering: optimizeLegibility;
 	}
+	h1 {
+		span {
+			display: inline;
+		}
+	}
 	#header {
-		#gotonav {
+		a#gotonav {
 			display: none;
 		}
 	}
 	#site {
 		#content {
-			.column(9)
+			.column(8.5)
 		}
 		#nav {
-			.column(3);
-			.rounded(5px);
+			.column(3.5);
+			// .rounded(5px);
 			// .drop-shadow(0, 0, 10px, 0.3);
-			border: 1px solid @grey;
 			.box-sizing();
-			padding: 0.5em 0 2em 0;
 			margin-top: 0;
 			h3 {
-				display: block;
-				
-			}
-			ul {
-				li {
-					a {
-						&:hover {
-							
-						}
-					}
-				}
+				// display: block;
+				// padding: 0.5em;
 			}
 		}
 	}	

@@ -14,7 +14,7 @@ $(document).ready(function(){
 				$target = $target.length && $target || jQuery('[name=' + $url + ']');
 				if ($target.length) {
 					var targetOffset = $target.offset().top;
-					jQuery('html,body').animate({scrollTop: targetOffset - 64}, $scrollTime);
+					jQuery('html,body').animate({scrollTop: targetOffset - 15}, $scrollTime);
 					//setTimeout(updateUrl, $scrollTime + 100)
 					return false;
 				}
