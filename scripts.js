@@ -27,7 +27,12 @@ $(document).ready(function(){
 	buildTOC('h2','nav'); 
 
 	// Take all alt tags and create an image caption below the image using span.caption (CSS too)
+	// var imgCaption = $('#content').find('img').attr('alt');
 
+	$('#content img').each(function(){
+		var imgCaption = $(this).attr('alt');
+		$(this).after("<span class='caption'>" + imgCaption + "</span>");
+	});
 });
 
 // Functions 
