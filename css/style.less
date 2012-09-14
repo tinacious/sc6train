@@ -1,0 +1,180 @@
+// Imports
+@import 'grid.less';
+@import 'elements.less';
+@import 'reset.css';
+
+// Colours
+@blue: #2173AB;
+@yellow: #ffcf06;
+@darkgrey: #222;
+@mediumgrey: #3d3d3d;
+@grey: #d7d7d7;
+
+@column-width: 80;
+@gutter-width: 20;
+@columns: 12;
+
+@total-width: 100%;
+
+// Mixins
+.cf() {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+.adelle(@weight) {
+	font-family: "adelle", 'gill sans', 'palatino', georgia, serif;
+	font-weight: @weight;
+}
+
+.box-sizing() {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+// Styles
+
+body {
+	font-family: 'helvetica neue', verdana, sans-serif;
+	font-size: 100%;
+	color: @mediumgrey;
+	background: #fff;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+}
+
+h1, h2, h3 {
+	.adelle(700);
+	color: #000;
+	line-height: 1.5em;
+	margin-bottom: 0.3em;
+}
+
+h1 {font-size: 2.5em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.3em;}
+
+a {
+	color: @blue;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	line-height: 1.8em;
+}
+
+#header {
+	background: url(../images/header.png) repeat-x;
+	height: 108px;
+	margin-bottom: 2em;
+	position: relative;
+	img {
+		display: block;
+		margin: 0 auto;
+		padding-top: 1em;
+	}
+	#gotonav {
+		background: @blue;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
+}
+
+#site {
+	max-width: 960px;
+	margin: 0 auto;
+	font-size: 0.9em;
+	line-height: 1.8em;
+	.cf();
+	#content {
+		.column(12);
+	}
+	#nav {
+		.column(12);
+		background: #efefef;
+		margin-top: 2em;
+		margin-bottom: 0.5em;
+		h3 {
+			display: none;
+		}
+		ul {
+			// text-indent: 1.5em;
+			li {
+				
+				display: block;
+				a {
+					padding: 0.5em;
+					display: block;
+					&:hover {
+						background: @blue;
+						color: #efefef;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+#footer {
+	background: url(../images/footer.png) #005da2 repeat-x;
+	color: #fff;
+	padding: 1em 0;
+	p {
+		text-align: center;
+	}
+}
+
+// Responsive
+
+@media screen and (min-width: 720px) {
+	body {
+		text-rendering: optimizeLegibility;
+	}
+	#header {
+		#gotonav {
+			display: none;
+		}
+	}
+	#site {
+		#content {
+			.column(9)
+		}
+		#nav {
+			.column(3);
+			.rounded(5px);
+			// .drop-shadow(0, 0, 10px, 0.3);
+			border: 1px solid @grey;
+			.box-sizing();
+			padding: 0.5em 0 2em 0;
+			margin-top: 0;
+			h3 {
+				text-align: center;
+				display: block;
+				margin-bottom: 0.5em;
+			}
+			ul {
+				li {
+					a {
+						&:hover {
+							// background: #efefef;
+							// color: @blue;
+							// text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}	
+	#footer {
+		margin-top: 3em;
+	}
+}

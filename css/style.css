@@ -1,0 +1,166 @@
+@import 'reset.css';
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+body {
+  font-family: 'helvetica neue', verdana, sans-serif;
+  font-size: 100%;
+  color: #3d3d3d;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeSpeed;
+}
+h1,
+h2,
+h3 {
+  font-family: "adelle", 'gill sans', 'palatino', georgia, serif;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5em;
+  margin-bottom: 0.3em;
+}
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.3em;
+}
+a {
+  color: #2173ab;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  line-height: 1.8em;
+}
+#header {
+  background: url(../images/header.png) repeat-x;
+  height: 108px;
+  margin-bottom: 2em;
+  position: relative;
+}
+#header img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+#header #gotonav {
+  background: #2173ab;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#site {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+#site:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#site #content {
+  display: inline;
+  float: left;
+  width: 98.33333333333333%;
+  margin: 0 0.8333333333333334%;
+}
+#site #nav {
+  display: inline;
+  float: left;
+  width: 98.33333333333333%;
+  margin: 0 0.8333333333333334%;
+  background: #efefef;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+#site #nav h3 {
+  display: none;
+}
+#site #nav ul li {
+  display: block;
+}
+#site #nav ul li a {
+  padding: 0.5em;
+  display: block;
+}
+#site #nav ul li a:hover {
+  background: #2173ab;
+  color: #efefef;
+  text-decoration: none;
+}
+#footer {
+  background: url(../images/footer.png) #005da2 repeat-x;
+  color: #fff;
+  padding: 1em 0;
+}
+#footer p {
+  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  body {
+    text-rendering: optimizeLegibility;
+  }
+  #header #gotonav {
+    display: none;
+  }
+  #site #content {
+    display: inline;
+    float: left;
+    width: 73.33333333333333%;
+    margin: 0 0.8333333333333334%;
+  }
+  #site #nav {
+    display: inline;
+    float: left;
+    width: 23.333333333333332%;
+    margin: 0 0.8333333333333334%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0.5em 0 2em 0;
+    margin-top: 0;
+  }
+  #site #nav h3 {
+    text-align: center;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  #footer {
+    margin-top: 3em;
+  }
+}
