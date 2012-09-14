@@ -22,16 +22,21 @@ $(document).ready(function(){
 		});
 	});
 
+	// All links in a new window
+	$("#content a").attr('target','_blank');
+	// $("#content a").after("<img src='img/new-window.png' class='new_win' />");
+	$("#content a").after("<span class='new_win'>&nbsp; &nbsp;</span>");
+
 
 	// Table of Contents generation
 	buildTOC('h2','nav'); 
 
-	// Take all alt tags and create an image caption below the image using span.caption (CSS too)
-	// var imgCaption = $('#content').find('img').attr('alt');
+	// Automagically generate image captions and titles using alt tags
 
-	$('#content img').each(function(){
+	$('#content img:not([class=new_win])').each(function(){
 		var imgCaption = $(this).attr('alt');
 		$(this).after("<span class='caption'>" + imgCaption + "</span>");
+		$(this).attr('title', imgCaption);
 	});
 });
 
