@@ -14,7 +14,7 @@ $(document).ready(function(){
 				$target = $target.length && $target || jQuery('[name=' + $url + ']');
 				if ($target.length) {
 					var targetOffset = $target.offset().top;
-					jQuery('html,body').animate({scrollTop: targetOffset - 15}, $scrollTime);
+					jQuery('html,body').animate({scrollTop: targetOffset - 30}, $scrollTime);
 					//setTimeout(updateUrl, $scrollTime + 100)
 					return false;
 				}
@@ -29,7 +29,15 @@ $(document).ready(function(){
 	$("#content a").after("<span class='new_win'>&nbsp;&nbsp;&nbsp;</span>");
 
 
-	// // Sticky Nav
+	
+
+
+	// Table of Contents generation
+	buildTOC('h2','nav'); 
+
+
+
+	// Sticky Nav
 	// function sticky_relocate() {
 	// 	var window_top = $(window).scrollTop();
 	// 	var div_top = $('#sticky-anchor').offset().top;
@@ -40,14 +48,24 @@ $(document).ready(function(){
 	// 	}
 	// }
 
-	// // google.setOnLoadCallback(function() {
-	// // 	$(window).scroll(sticky_relocate);
-	// // 	sticky_relocate();
-	// // });
+	// google.setOnLoadCallback(function() {
+	// 	$(window).scroll(sticky_relocate);
+	// 	sticky_relocate();
+	// });
 
+	$('#gotonav2').hide();
+	$(function(){
+		var menuOffset = $('#nav')[0].offsetTop;
+		$(document).bind('ready scroll',function(){
+			var docScroll = $(document).scrollTop();
+			if(docScroll >= menuOffset){
+				$('#gotonav2').show();
+			} else {
+				$('#gotonav2').hide();
+			}
+		});
+	});
 
-	// Table of Contents generation
-	buildTOC('h2','nav'); 
 
 	// Automagically generate image captions and titles using alt tags
 
