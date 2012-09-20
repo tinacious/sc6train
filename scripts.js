@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
 	// Anchor Scroll
 	jQuery(function() {
 		jQuery('a[href*=#]').click(function() {
@@ -37,34 +39,23 @@ $(document).ready(function(){
 
 
 
-	// Sticky Nav
-	// function sticky_relocate() {
-	// 	var window_top = $(window).scrollTop();
-	// 	var div_top = $('#sticky-anchor').offset().top;
-	// 	if (window_top > div_top) {
-	// 		$('#nav').addClass('fixed');
-	// 	} else {
-	// 		$('#nav').removeClass('fixed');
-	// 	}
-	// }
-
-	// google.setOnLoadCallback(function() {
-	// 	$(window).scroll(sticky_relocate);
-	// 	sticky_relocate();
-	// });
-
-	$('#gotonav2').hide();
+	// To Table of Contents button
+	$('#gotonav_desktop').hide();
 	$(function(){
-		var menuOffset = $('#nav')[0].offsetTop;
+		var menuOffset = $('#content')[0].offsetTop;
 		$(document).bind('ready scroll',function(){
 			var docScroll = $(document).scrollTop();
 			if(docScroll >= menuOffset){
-				$('#gotonav2').show();
+				$('#gotonav_desktop').show();
 			} else {
-				$('#gotonav2').hide();
+				$('#gotonav_desktop').hide();
 			}
 		});
 	});
+
+	
+
+	
 
 
 	// Automagically generate image captions and titles using alt tags
@@ -74,6 +65,17 @@ $(document).ready(function(){
 		$(this).after("<span class='caption'>" + imgCaption + "</span>");
 		$(this).attr('title', imgCaption);
 	});
+
+
+	// Go-to Table of Contents button control for desktop
+
+	var winWidth = $(window).width();
+	if (winWidth<720) {
+		$('#gotonav_desktop span').hide();
+	} else {
+		$('#gotonav_desktop span').show();
+	}
+
 });
 
 // Functions 

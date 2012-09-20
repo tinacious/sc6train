@@ -14,9 +14,10 @@
 	<![endif]-->	
 </head>
 <body>
-	<a href="#nav" id="gotonav">Table of Contents &darr;</a>
+	
 	<div id="header">
 		<img src="img/logo.png" alt="Sheridan logo">
+		<a href="#nav" id="gotonav_mobile"><span>Table of Contents &darr;</span></a>
 	</div>
 	<div id="site">
 		<div id="content">
@@ -34,7 +35,7 @@
 			</section>
 
 			<section>
-				<h2>Login and Edit Content in Page Editor Mode</h2>
+				<h2>Login and Edit Content</h2>
 				<p>
 					To login to SiteCore, visit <a href="sccms.sheridaninstitute.ca/sitecore/login/">sccms.sheridaninstitute.ca/sitecore/login/</a> or <a href="sccms.sheridancollege.ca/sitecore/login">sccms.sheridancollege.ca/sitecore/login</a>.
 				</p>
@@ -59,6 +60,12 @@
 				<p>
 					Once checked out, you can click on the editable content areas to edit the page. Not all areas of the page are editable, and often you can only edit blocks of text and image references, not their layout and arrangement. Hovering your mouse around the page will indicate which content blocks are editable by highlighting these areas with a dotted outline.
 				</p>
+				<h3>Quick Overview</h3>
+				<p>
+					Please see the video 01 - Login and Edit (1 min 34 sec) for a quick demonstration on navigating to a page and editing the content in Page Editor mode.
+				</p>
+				<!-- insert video -->
+				
 			</section>
 
 			<section>
@@ -77,9 +84,150 @@
 				<p>
 					To paste text without affecting the default text layout, use the Paste without Formatting button in the rich text editor. 
 				</p>
+				<img src="img/strip-format.png" alt="Click on the clipboard with a W to paste without formatting.">
+				<p>
+					If you are in Page Editor mode, the floating palette you will see has less options. You will need to use the rich text editor pop-up by clicking the Document icon (the first icon on the left). 
+				</p>
+				<img src="img/ce-popup.png" alt="Clicking the Document icon brings up the Content Editor pop-up where you can paste without formatting.">
 			</section>
 
-		</div>
+			<section>
+				<h2>Creating Sections of a Page using Headings</h2>
+				<p>
+					If you need to create headings/subtitles, select the text you want to change and apply a header style from the paragraph style dropdown menu. You can use Heading 2, 3 or 4. The default style is "Normal" and "p" and should be used for all body text.
+				</p>
+				<img src="img/headings.png" alt="Highlighted text formatting will change based on the style chosen.">
+			</section>
+
+			<section>
+				<h2>Uneditable Text</h2>
+				<p>
+					In Page Editor mode, you may come across a content block that you cannot edit. It may be that: 
+				</p>
+				<ul>
+					<li>the text is hard-coded into the site design and cannot be changed through the CMS</li>
+					<li>it is fed in from a related item</li>
+				</ul>
+				<img src="img/related-item.jpeg" alt="Related item on the Admissions page">
+				<p>
+					On the Admissions page, for example, you will not be able to edit some of these items by clicking on them. In the case of the Admissions sub-navigation, the links are called “related items.” They are the title of the page they link to. SiteCore lets you know that you’re editing a related item.
+				</p>
+				<p>
+					Clicking on either the title, image or links of a content block section (e.g. Visit Sheridan, Apply to Sheridan, etc.) will allow you to edit that related item. You will need to click on the title, an image or a link to bring up the editing palette.
+				</p>
+				<p>
+					Once you have clicked to edit the related item, you will see the information shown in the next image. You will initially see a split-pane view with the site content below the content editor.
+				</p>
+				<img src="img/content-editor.jpeg" alt="Content Editor">
+				<p>
+					In the above example, the title has been changed from “Visit Sheridan” to say “Discover Sheridan.” The content has been edited to include the word “EDITED” at the end. I have added exclamation marks to all of the reference links. 
+				</p>
+				<p>
+					If this item is to show up in the right sidebar column, check the box.
+				</p>
+				<p>
+					If you need more options than the Page Editor provides, you can do one of the following:
+				</p>
+				<ul>
+					<li>Click the Document icon in the floating palette in the Page Editor to load the rich text editor in a pop-up window (first image below)</li>
+					<li>Click the View tab and check off the Navigation Bar box to display the navigation bar. This used to be called the Breadcrumb but has been renamed to Navigation Bar in this version of SiteCore.
+						<ul>
+							<li>Click Edit to be taken to the full Content Editor (second image below)</li>
+						</ul>
+					</li>
+				</ul>
+				<img src="img/doc-icon.png" alt="Content Editor pop-up loads after clicking the Document icon.">
+				<img src="img/enable-nav-bar.png" alt="In the View tab, selecting the Navigation Bar checkbox displays the Navigation Bar (previously called Breadcrumb) and gives you the option to Edit the page in the Content Editor">
+			</section>
+
+			<section>
+				<h2>Creating Links: Linking to Files and Pages</h2>
+				<h3>Internal Links</h3>
+				<p>
+					Linking throughout the Sheridan site can be done through the Page Editor. Simply select some text and click the “Insert Link” button on the floating palette. 
+				</p>
+				<img src="img/int-links.png" alt="Floating palette in Page Editor mode allows you to link to internal pages and files.">
+				<p>
+					The link button in the floating palette will allow you to link internally to the site. 
+				</p>
+				<h3>External, Anchor and E-mail links</h3>
+				<p>
+					If you want to provide a link to an external website address, an anchor link to a separate part of the page, or an email address link, you will need to click the “Edit the text” button, which is the first button, to be brought to the rich text editor. 
+				</p>
+				<p>
+					From there, click the link button with a globe on it to open the hyperlink manager.
+				</p>
+				<img src="img/ext-links.png" alt="Click “Edit Text” then “Hyperlink Manager” to manage external, anchor and email links.">
+				<p>
+					From the hyperlink manager, you will be able to include external website links, anchor links to separate parts of the page, and links to email addresses, which, depending on the user’s computer settings, will launch their default email client.
+				</p>
+				<p>
+					Properly creating links is important. All external links must be preceded by “http://” and all email links must be preceded in their code by “mailto:” in order to function properly. Improperly creating links can cause “404 Page Not Found” (broken link) errors. Using the hyperlink manager will automatically properly create these links for you so it is important that you use it create the type of link you want.
+				</p>
+			</section>
+
+			<section>
+				<h2>Uploading Files to the Media Library</h2>
+				<p>
+					Files will need to be added to the Media Library before uploading them. The Media Library can be accessed through the bottom toolbar in the Content Editor or through the menu accessible using the blue arrow at the top right corner of the page.
+				</p>
+				<p>
+					Navigate to the folder you want to upload files to then click “Upload Files.” You can upload images, PDF, Word documents and Flash files (SWF).
+				</p>
+				<img src="img/media-lib.png" alt="The Media Library">
+				<p>
+					If you do not see the left sidebar section as in the image above—the Content Tree—enable it by clicking the View tab in the top toolbar then checking off the box for Content Tree.
+				</p>
+				<img src="img/view-tab.png" alt="The View tab that allows you to choose which sections of the Content Editor are visible.">
+				<p>
+					Navigate to the folder/directory you want to upload the file to then click “Upload Files.” Choose the files you want to upload.
+				</p>
+				<h3>Uploading Multiple Files</h3>
+				<p>
+					You can upload more than one file at a time by holding different buttons on your keyboard and clicking on the files with your mouse.
+				</p>
+				<p>
+					To select a range of files, click the first file in the range of files, press Shift, and then select the last file in the range. This will select all the files between the first file clicked and the last file clicked.
+				</p>
+				<img src="img/select-range.png" alt="Selecting a range of files involve clicking the first file, pressing and holding Shift, then clicking the last file.">
+				<img src="img/select-mult.png" alt="Selecting multiple files not in a range can be done by simply holding the Ctrl (Windows) or Cmd (Mac) button while clicking additional files.">
+				<p>
+					To select multiple files that are not in a range, click on the first file, then press Control (Ctrl, Windows) or Command (Cmd, Mac) and click all the files after that that you want to include while holding Control or Command.
+				</p>
+				<p>
+					These are operating system-wide shortcuts that work in all instances of Windows Explorer and Mac Finder.
+				</p>
+				<h3>Image Information in SiteCore</h3>
+				<p>
+					Once you upload an image, you will be taken to a screen where you can specify its attributes.
+				</p>
+				<p>
+					You will see the image width and height. Changing this will disrupt the original aspect ratio of the image. It is advised not to touch this setting. Should you decide to change this anyway, doing so simply scales the image. It does not change the size of the file. If you have large images that you want to shrink, it is best to do this by using image editing software. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions on doing that.
+				</p>
+				<p>
+					The “Alt” (alternate) text is used for screen readers and if the user has images disabled on their computer or device. It is good practice to write a description of the image in this field even though it is not seen.
+				</p>
+				<img src="img/img-attr.png" alt="Specifying alternate text after image upload.">
+				<p>
+					You do not need to modify any other image attributes. 
+				</p>
+				<p>
+					If you wish to change the file name, right click on the file and click Rename.
+				</p>
+				<p>
+					If you go to the folder where the images are that you uploaded, you can see any warnings that need to be addressed. Alt text is highly recommended. The image in the figure below does not have alt text specified so there is a warning.
+				</p>
+				<img src="img/img-warn.png" alt="You can rename the image by right clicking it and selecting Rename. You can edit image attributes (like alt text) by clicking into the image.">
+			</section>
+
+
+
+
+<!-- 			<section id="editing-images">
+				<h2>Editing Images for SiteCore</h2>
+			</section>
+ -->
+		</div> <!-- /#site -->
 
 
 
@@ -99,7 +247,7 @@
 
 	<div id="footer">
 		<p>Department of Marketing &amp; Communications</p>
-		<a href="#nav" id="gotonav2">Table of<br/>Contents &uarr;</a>
+		<a href="#nav" id="gotonav_desktop"><span>Table of<br/>Contents &uarr;</span></a>
 	</div>
 </body>
 </html>

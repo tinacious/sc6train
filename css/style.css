@@ -68,11 +68,9 @@ p {
   margin: 0 auto;
   padding-top: 1em;
 }
-a#gotonav,
-a#gotonav2 {
+#header a#gotonav_mobile {
   background: #efefef;
   color: #3d3d3d;
-  display: block;
   padding: 0.3em;
   text-decoration: none;
   line-height: 1.3em;
@@ -80,11 +78,6 @@ a#gotonav2 {
   border: 1px solid #d7d7d7;
   font-size: 0.7em;
   font-weight: 700;
-}
-a#gotonav2 {
-  display: none !important;
-}
-a#gotonav {
   position: fixed;
   z-index: 996;
   top: 0;
@@ -142,6 +135,10 @@ a#gotonav {
   list-style-type: decimal;
   margin-left: 3em;
 }
+#site #content ul li {
+  list-style-type: disc;
+  margin-left: 3em;
+}
 #site #nav {
   display: inline;
   float: left;
@@ -195,11 +192,11 @@ a#gotonav {
   h1 span {
     display: inline;
   }
-  a#gotonav {
+  a#gotonav_mobile {
     display: none;
   }
-  a#gotonav2 {
-    display: block !important;
+  a#gotonav_desktop {
+    display: block;
     position: fixed;
     bottom: 5px;
     right: 5px;
@@ -222,5 +219,16 @@ a#gotonav {
   }
   #footer {
     margin-top: 3em;
+  }
+  #footer a#gotonav_desktop {
+    background: #efefef;
+    color: #3d3d3d;
+    padding: 0.3em;
+    text-decoration: none;
+    line-height: 1.3em;
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    font-size: 0.7em;
+    font-weight: 700;
   }
 }
