@@ -104,24 +104,28 @@ p {
 #site #content img {
   max-width: 100%;
   display: block;
-  margin: 2em auto 0 auto;
+  margin: 2em auto 0.5em auto;
 }
 #site #content span.new_win {
-  width: 10px;
-  height: 10px;
+  display: inline;
   background: url(../img/new-window.png) no-repeat;
   margin-left: 2px;
 }
 #site #content span.caption {
-  color: #666;
+  margin-bottom: 3em;
   display: block;
   font-size: 0.9em;
   text-align: center;
   background: #efefef;
+  padding: 0.2em;
 }
 #site #content section {
   margin-bottom: 4em;
   display: block;
+}
+#site #content ol li {
+  list-style-type: decimal;
+  margin-left: 3em;
 }
 #site #nav {
   display: inline;
@@ -152,6 +156,11 @@ p {
 #site #nav ul li a:hover {
   background: #2173ab;
   color: #fff;
+}
+#site #nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 997;
 }
 #footer {
   background: url(../img/footer.png) #005da2 repeat-x;

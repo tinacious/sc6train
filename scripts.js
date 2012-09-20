@@ -22,10 +22,28 @@ $(document).ready(function(){
 		});
 	});
 
+
 	// All links in a new window
 	$("#content a").attr('target','_blank');
 	// $("#content a").after("<img src='img/new-window.png' class='new_win' />");
-	$("#content a").after("<span class='new_win'>&nbsp; &nbsp;</span>");
+	$("#content a").after("<span class='new_win'>&nbsp;&nbsp;&nbsp;</span>");
+
+
+	// // Sticky Nav
+	// function sticky_relocate() {
+	// 	var window_top = $(window).scrollTop();
+	// 	var div_top = $('#sticky-anchor').offset().top;
+	// 	if (window_top > div_top) {
+	// 		$('#nav').addClass('fixed');
+	// 	} else {
+	// 		$('#nav').removeClass('fixed');
+	// 	}
+	// }
+
+	// // google.setOnLoadCallback(function() {
+	// // 	$(window).scroll(sticky_relocate);
+	// // 	sticky_relocate();
+	// // });
 
 
 	// Table of Contents generation
