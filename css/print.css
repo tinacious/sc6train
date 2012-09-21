@@ -1,0 +1,37 @@
+body {
+  font-size: 9pt;
+  font-family: tahoma, verdana, sans-serif;
+}
+#header {
+  display: none;
+}
+#header a#gotonav_mobile {
+  display: none;
+}
+#site #content img {
+  display: block;
+  margin: 2em auto 0.5em auto;
+  max-width: 60%;
+}
+#site #content span.caption {
+  margin-bottom: 3em;
+  display: block;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 0.2em;
+}
+#site #content span.new_win {
+  display: none;
+}
+#site #nav {
+  display: none;
+}
+#footer p {
+  display: none;
+}
+#footer a#gotonav_desktop {
+  display: none;
+}
+#footer a#gotonav_desktop span {
+  display: none;
+}
