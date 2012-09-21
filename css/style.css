@@ -61,6 +61,9 @@ p {
 b {
   font-weight: 700;
 }
+em {
+  font-style: italic;
+}
 code {
   background: #efefef;
   padding: 0.5em;
@@ -136,6 +139,14 @@ code {
   text-align: center;
   background: #efefef;
   padding: 0.2em;
+}
+#site #content span.pink {
+  color: #ff008c;
+  font-weight: 700;
+}
+#site #content span.turq {
+  color: #00ced1;
+  font-weight: 700;
 }
 #site #content section {
   margin-bottom: 4em;

@@ -167,10 +167,36 @@
 			</section>
 
 			<section>
-				<h2>Uploading Files to the Media Library</h2>
+				<h2>Uploading Images and other media to the Media Library</h2>
 				<p>
-					Files will need to be added to the Media Library before uploading them. The Media Library can be accessed through the bottom toolbar in the Content Editor or through the menu accessible using the blue arrow at the top right corner of the page.
+					Files will need to be added to the Media Library <em>before</em> being able to insert them into your pages. 
 				</p>
+				<p>
+					It is recommended to add images to the Media Library through Page Editor mode as doing it this way will add it to the correct folder/directory for that section.
+				</p>
+				<h3>From the Page Editor mode</h3>
+				<p>
+					To access the Media Library from Page Editor mode, navigate to the page you want to edit and click into an editable content area.
+				</p>
+				<p>
+					In the floating palette, click the image icon, which is indicated in the following image with a <span class="pink">pink arrow</span>.
+				</p>
+				<img src="img/img-page-editor.png" alt="Add images in Page Editor mode using the floating palette.">
+				<p>
+					Once you click the image icon, you will have the chance to upload an image to add in this content block or choose from already uploaded images. Click the Upload button. A small box will pop up and from here you can add an image. Click Browse to select an image from your computer. 
+				</p>
+				<p>
+					If you only want to upload images and not add them to a content block, you can access the Media Library through the Content Editor. To enter the Content Editor from Page Editor mode, click on Edit. See the <span class="turq">turquoise arrow</span> in the above image. See the following section for more information.
+				</p>
+				<img src="img/image-upload.png" alt="Uploading an image while in Page Editor mode using the floating palette.">
+				<h3>From the Content Editor mode</h3>
+				<p>
+					If you reached the Content Editor from Page Editor mode, you will see a split-pane version. The Media Library can be accessed through the bottom toolbar in the Content Editor or through the menu accessible using the blue menu at the top right corner of the page. Both are indicated by <span class="pink">pink arrows</span> in the following image.
+				</p>
+				<p>
+					Using the Media Library from the Content Editor is useful to see all media, not just page-specific media.
+				</p>
+				<img src="img/split-pane-ce.png" alt="Split-pane view of the Content Editor and the site. The Content Editor is in the top pane.">
 				<p>
 					Navigate to the folder you want to upload files to then click “Upload Files.” You can upload images, PDF, Word documents and Flash files (SWF).
 				</p>
@@ -199,35 +225,36 @@
 				</p>
 				<h3>Image Information in SiteCore</h3>
 				<p>
-					Once you upload an image, you will be taken to a screen where you can specify its attributes.
+					Once you upload an image, you will be taken to a screen where you can specify its attributes. <em>The only attribute you should add is the Alt text</em>.
 				</p>
 				<p>
-					You will see the image width and height. Changing this will disrupt the original aspect ratio of the image. It is advised not to touch this setting. Should you decide to change this anyway, doing so simply scales the image. It does not change the size of the file. If you have large images that you want to shrink, it is best to do this by using image editing software. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions on doing that.
+					The “Alt” (alternate) text is used for screen readers and if the user has images disabled on their computer or device. A short description of the image should be added here. It is good practice to include the alternate text. A red warning will appear next to the field indicating that it should be added if it is blank.
 				</p>
+				<img src="img/img-attr.png" alt="Alternate text has not been added. Red indicates recommended field to complete.">
+				<img src="img/img-alt-text.png" alt="Alternate text is included with this image. This is the right way.">
 				<p>
-					The “Alt” (alternate) text is used for screen readers and if the user has images disabled on their computer or device. It is good practice to write a description of the image in this field even though it is not seen.
+					Among the alternate text field, you will also see fields for the image width and height. Changing these will disrupt the original aspect ratio of the image. <em>It is advised not to modify these values</em>. Should you decide to change this anyway, doing so simply scales the image. It does not reduce or increase the file size. If you have large images, it is recommended that you shrink these using image editing software. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions.
 				</p>
-				<img src="img/img-attr.png" alt="Specifying alternate text after image upload.">
 				<p>
 					You do not need to modify any other image attributes. 
 				</p>
 				<p>
 					If you wish to change the file name, right click on the file and click Rename.
 				</p>
-				<p>
-					If you go to the folder where the images are that you uploaded, you can see any warnings that need to be addressed. Alt text is highly recommended. The image in the figure below does not have alt text specified so there is a warning.
-				</p>
-				<img src="img/img-warn.png" alt="You can rename the image by right clicking it and selecting Rename. You can edit image attributes (like alt text) by clicking into the image.">
+				<img src="img/img-warn.png" alt="You can rename the image by right clicking it and selecting Rename. You can edit image attributes (like alt text) by clicking into the image. A warning indicates that the Alt text has not been added.">
 			</section>
 
 			<section>
 				<h2>Changing Images in Page Editor Mode</h2>
 				<p>
-					Some images can be changed/re-referenced but some cannot. Click on the image, then the image icon to change the source image. A box will pop up allowing you to upload an image from your computer or choose from one of your uploaded files.
+					Some images can be changed/re-referenced but some cannot. Click on the image, then the image icon to change the source image. A box will pop up allowing you to upload an image from your computer or choose from one of your uploaded files. Uploading images using Page Editor mode have been described in the previous section. 
+				</p>
+				<p>
+					The window that pops up is a smaller view of the Media Library called the Media Browser. The difference between the Media Library and the Media Browser is the presentation: the Media Browser is presented in a pop-up window in Page Editor mode. You will have access to all of the media uploaded to this section rather than the full Media Library.
 				</p>
 				<img src="img/img-page-editor.jpeg" alt="Editing images in Page Editor mode.">
 				<p>
-					It is recommended that you do not use SiteCore for image editing (cropping, resizing, etc.) and that you instead use photo editing software like Photoshop. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions on doing that.
+					It is recommended that you do not use SiteCore for image editing (cropping, resizing, etc.) and that you instead use photo editing software like Photoshop. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions.
 				</p>
 			</section>
 
@@ -243,7 +270,7 @@
 					</li>
 				</ul>
 				<p>
-					Once you have made your changes, you will need to save them and Submit them to a moderator. This will move the document up in the workflow. 
+					Once you have made your changes, you will need to save them and Submit them to a moderator. This will move the document up in the workflow. A moderator is an editor with higher privileges.
 				</p>
 				<p>
 					Click Check-In once you are done editing it to unlock it from your editing privilege so that others may edit it if need be.
@@ -394,6 +421,13 @@
 				<p>
 					Remembering this little snippet of text will allow you to painlessly navigate the site and load the Page Editor only when needed, provided that you are logged in.
 				</p>
+				<h3>Quickly Accessing the Content Editor</h3>
+				<p>
+					Page Editor mode is great for navigating and editing small blocks of content but if you find that you want to quickly access the content editor, add the following text after <b>/sitecore/</b> to the URL. 
+				</p>
+				<code>
+					shell/Applications/Content%20Manager/
+				</code>
 			</section>
 
 			<section>

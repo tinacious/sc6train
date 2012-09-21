@@ -1,7 +1,6 @@
 // Imports
 @import 'grid.less';
 @import 'elements.less';
-@import 'reset.css';
 
 // Colours
 @blue: #2173AB;
@@ -25,8 +24,56 @@
 	}
 }
 
+.box-sizing() {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
 // IE styles
 
+body {
+	text-rendering: optimizeLegibility;
+}
+h1 {
+	span {
+		display: inline;
+	}
+}
+#header {
+
+}
+a#gotonav_mobile {
+	display: none;
+}
+a#gotonav_desktop {
+	display: block;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	height: 28px;
+}
 #site {
 	width: 960px;
+	#content {
+		.column(8)
+	}
+	#nav {
+		.column(3.5);
+		.box-sizing();
+		margin-top: 0;
+	}
+}	
+#footer {
+	margin-top: 3em;
+	a#gotonav_desktop {
+		background: #efefef;
+		color: @mediumgrey;	
+		padding: 0.3em;
+		text-decoration: none;
+		line-height: 1.3em;
+		text-align: center;
+		border: 1px solid @grey;
+		font-size: 0.7em;
+		font-weight: 700;
+	}
 }
