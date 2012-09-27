@@ -41,7 +41,7 @@
 					To login to SiteCore, visit <a href="sccms.sheridaninstitute.ca/sitecore/login/">sccms.sheridaninstitute.ca/sitecore/login/</a> or <a href="sccms.sheridancollege.ca/sitecore/login">sccms.sheridancollege.ca/sitecore/login</a>.
 				</p>
 				<p>
-					By default, the <u>Options</u> tab may be collapsed. Click on <u>Options</u> to expand the options and select your login method, be it <u>Desktop</u>, <u>Content Editor</u> or <u>Page Editor</u>.
+					By default, the <u>Options</u> tab may be collapsed. If so, click on <u>Options</u> to expand the options and select your login method, be it <u>Desktop</u>, <u>Content Editor</u> or <u>Page Editor</u>.
 				</p>
 				<ol>
 					<li>Enter your login credentials</li>
@@ -53,11 +53,22 @@
 				<p>
 					You may already be familiar with the Content Editor and Desktop options. New in version 6 is the Page Editor view. Page Editor mode allows you to edit the site while browsing. It is similar to and replaces the Web Edit option.
 				</p>
-				
 				<p>
-					Once you login to SiteCore Page Editor, you can navigate to the page you want to edit to edit it. Once you are at the page, click on Edit to Check-Out and lock the item. This will lock the page and only you can edit it until you check it in again. This is similar to checking out a library book where only one person can check it out at a time. 
+					Once you login to SiteCore Page Editor, you can navigate to the page you want to edit to edit it. Once you are at the page, click <u>Check-out</u> to lock the item. This will lock the page and only you can edit it until you check it in again. This is similar to checking out a library book where only one person can check it out at a time. 
 				</p>
-				<img src="img/lock-item.png" alt="Clicking Edit checks out / locks the item for editing.">
+				<p>
+					If you do not see the <u>Edit</u> or <u>Check-out</u> button, it could be because the ribbon is collapsed. To expand the ribbon, you can click on either of the tabs (e.g. <u>Home</u>, <u>View</u>, etc.) or the down arrow at the far right.
+				</p>
+				<img src="img/ribbon.png" alt="The ribbon can be expanded by clicking any of the tabs or the arrow in the far right.">
+				<!-- <img src="img/lock-item.png" alt="Clicking Edit checks out / locks the item for editing."> -->
+				<p>
+					<u>Edit</u> is found under every tab. There are two <u>Edit</u> buttons, one in the tabs section and the other in the navigation bar section. This used to be called the Breadcrumb but has been renamed to Navigation Bar in this version of SiteCore. If you do not see the Navigation Bar, click the <u>View</u> tab and mark the box for the Navigation Bar. It should appear.
+				</p>
+				<img src="img/enable-nav-bar.png" alt="In the View tab, selecting the Navigation Bar checkbox displays the Navigation Bar (previously called Breadcrumb) and gives you the option to Edit the page in the Content Editor">
+				<p>
+					Clicking the second one—the one in the Navigation Bar—will take you to the Content Editor. When you click the first one, nothing happens. This appears to be a bug in Page Editor mode. 
+				</p>
+				<img src="img/edit-buttons.png" alt="Clicking the second Edit button will take you to the Content Editor.">
 				<p>
 					Once checked out, you can click on the editable content areas to edit the page. Not all areas of the page are editable, and often you can only edit blocks of text and image references, not their layout and arrangement. Hovering your mouse around the page will indicate which content blocks are editable by highlighting these areas with a dotted outline.
 				</p>
@@ -83,7 +94,7 @@
 			</section>
 
 			<section>
-				<h2>Editing a Page</h2>
+				<h2>Editing a Page in Page Editor View</h2>
 				<p>
 					Click <u>Edit</u> to Check-Out the page to make sure that no one else can modify the file while you are working on it. 
 				</p>
@@ -95,10 +106,10 @@
 				<p>
 					Copying and pasting text from a rich-text source like Microsoft Word, an email, or a website may negatively affect the default Sheridan website layout.
 				</p>
+				<!-- <img src="img/strip-format.png" alt="Click on the clipboard with a W to paste without formatting."> -->
 				<p>
-					To paste text without affecting the default text layout, use the <u>Paste without Formatting</u> button in the rich text editor. 
+					To paste text without affecting the default text layout, use the <u>Paste from Word, strip font</u> button in the rich text editor. It is the clipboard icon with a W.
 				</p>
-				<img src="img/strip-format.png" alt="Click on the clipboard with a W to paste without formatting.">
 				<p>
 					If you are in Page Editor mode, the floating palette you will see has less options. You will need to use the rich text editor pop-up by clicking the <u>Document icon</u> (the first icon on the left). 
 				</p>
@@ -120,17 +131,21 @@
 				</p>
 				<ul>
 					<li>the text is hard-coded into the site design and cannot be changed through the CMS</li>
-					<li>it is fed in from a related item</li>
+					<li>it is a related item</li>
 				</ul>
 				<img src="img/related-item.jpeg" alt="Related item on the Admissions page">
 				<p>
-					On the Admissions page, for example, you will not be able to edit some of these items by clicking on them. In the case of the Admissions sub-navigation, the links are called “related items. They are the title of the page they link to. SiteCore lets you know that you’re editing a related item.
+					On the Admissions page, for example, you will not be able to edit some of these items by clicking on them. In the case of the Admissions sub-navigation, the links are called related items. 
 				</p>
 				<p>
 					Clicking on either the title, image or links of a content block section (e.g. Visit Sheridan, Apply to Sheridan, etc.) will allow you to edit that related item. You will need to click on the title, an image or a link to bring up the editing palette.
 				</p>
 				<p>
 					Once you have clicked to edit the related item, you will see the information shown in the next image. You will initially see a split-pane view with the site content below the Content Editor.
+				</p>
+				<img src="img/split-pane.png" alt="Split-pane view of the Content Editor on the site.">
+				<p>
+					Related items require the Content Editor to edit. Related items are sections of the page that are not the main content but are instead blocks of content. Below is an example of what the Content Editor in the top pane contains. It has been expanded vertically so you can see more. Normally it is the size of the above image.
 				</p>
 				<img src="img/content-editor.jpeg" alt="Content Editor">
 				<p>
@@ -144,21 +159,23 @@
 				</p>
 				<ul>
 					<li>Click the <u>Document icon</u> in the floating palette in the Page Editor to load the rich text editor in a pop-up window (first image below)</li>
-					<li>Click the <u>View</u> tab and check off the <u>Navigation Bar</u> box to display the navigation bar. This used to be called the Breadcrumb but has been renamed to Navigation Bar in this version of SiteCore.
+					<li>Click the <u>View</u> tab and check off the <u>Navigation Bar</u> box to display the navigation bar.
 						<ul>
 							<li>Click <u>Edit</u> to be taken to the full Content Editor (second image below)</li>
 						</ul>
 					</li>
 				</ul>
 				<img src="img/doc-icon.png" alt="Content Editor pop-up loads after clicking the Document icon.">
-				<img src="img/enable-nav-bar.png" alt="In the View tab, selecting the Navigation Bar checkbox displays the Navigation Bar (previously called Breadcrumb) and gives you the option to Edit the page in the Content Editor">
+				<p>
+					Once you save your changes in the split-pane view, you will be returned to Page Editor mode where you can resume navigating and editing pages.
+				</p>
 			</section>
 
 			<section>
 				<h2>Creating Links: Linking to Files and Pages</h2>
 				<h3>Internal Links</h3>
 				<p>
-					Linking throughout the Sheridan site can be done through the Page Editor. Simply select some text and click the “Insert Link button on the floating palette. 
+					Linking throughout the Sheridan site can be done through the Page Editor. Simply select some text and click the Insert Link button on the floating palette. 
 				</p>
 				<img src="img/int-links.png" alt="Floating palette in Page Editor mode allows you to link to internal pages and files.">
 				<p>
@@ -220,7 +237,7 @@
 				</p>
 				<img src="img/view-tab.png" alt="The View tab that allows you to choose which sections of the Content Editor are visible.">
 				<p>
-					Navigate to the folder/directory you want to upload the file to then click “Upload Files. Choose the files you want to upload.
+					Navigate to the folder/directory you want to upload the file to then click <u>Upload Files</u>. Choose the files you want to upload.
 				</p>
 				<h3>Uploading Multiple Files</h3>
 				<p>
@@ -242,7 +259,7 @@
 					Once you upload an image, you will be taken to a screen where you can specify its attributes. <em>The only attribute you should add is the Alt text</em>.
 				</p>
 				<p>
-					The “Alt (alternate) text is used for screen readers and if the user has images disabled on their computer or device. A short description of the image should be added here. It is good practice to include the alternate text. A red warning will appear next to the field indicating that it should be added if it is blank.
+					The "Alt" (alternate) text is the text that appears if the image doesn't appear, be it because images are disabled or the link path to the image is broken. It is also used for screen readers. A short description of the image should be added here. It is good practice to include the alternate text. A red warning will appear next to the field indicating that it should be added if it is blank.
 				</p>
 				<img src="img/img-attr.png" alt="Alternate text has not been added. Red indicates recommended field to complete.">
 				<img src="img/img-alt-text.png" alt="Alternate text is included with this image. This is the right way.">
@@ -253,7 +270,7 @@
 					You do not need to modify any other image attributes. 
 				</p>
 				<p>
-					If you wish to change the file name, right click on the file and click Rename.
+					If you wish to change the file name, right click on the file and click <u>Rename</u>.
 				</p>
 				<img src="img/img-warn.png" alt="You can rename the image by right clicking it and selecting Rename. You can edit image attributes (like alt text) by clicking into the image. A warning indicates that the Alt text has not been added.">
 			</section>
@@ -286,10 +303,11 @@
 				<p>
 					Once you have made your changes, you will need to save them and Submit them to a moderator. This will move the document up in the workflow. A moderator is an editor with higher privileges.
 				</p>
-				<p>
+				<img src="img/publish-not-visible.jpg" alt="Changes saved will not be live right away. The document moves up in the workflow. (Content Editor mode)">
+				<!-- <p>
 					Click Check-In once you are done editing it to unlock it from your editing privilege so that others may edit it if need be.
 				</p>
-				<img src="img/checkin.png" alt="Submit and Check-In options in the Edit menu.">
+				<img src="img/checkin.png" alt="Submit and Check-In options in the Edit menu."> -->
 				<p>
 					To view your Workbox while in Page Editor mode, click on the Home tab and then click Workbox. The top menu bar may be collapsed and you may not see the buttons below. Click on it to expand it and see the options.
 				</p>
@@ -331,7 +349,7 @@
 			<section>
 				<h2>Versions</h2>
 				<p>
-					SiteCore tracks changes to pages under the “Versions tab.
+					SiteCore tracks changes to pages under the Versions tab.
 				</p>
 				<p>
 					If you are an administrator, you can revert back to, delete or hide a previous version. 
@@ -342,7 +360,7 @@
 				</p>
 				<img src="img/versions2.png" alt="Compare two versions in two-column layout.">
 				<p>
-					If you only want to unpublish/hide a version but not delete it, go to the Publish tab and click on Change. A window will pop-up allowing you to uncheck versions of the page to unpublish it.
+					If you only want to unpublish/hide a version but not delete it, go to the Publish tab and click on <u>Change</u>. A window will pop-up allowing you to uncheck versions of the page to unpublish it.
 				</p>
 				<img src="img/versions3.png" alt="Version control under the Publish tab.">
 				<p>
@@ -353,23 +371,23 @@
 			<section>
 				<h2>Changing Your Password</h2>
 				<p>
-					If you wish to change your password, you can do so before logging in. Click “Change Password on the login screen, which can be accessed at <a href="http://sccms.sheridaninstitute.ca/sitecore/login/">sccms.sheridaninstitute.ca/sitecore/login/</a>.
+					If you wish to change your password, you can do so before logging in. Click <u>Change Password</u> on the login screen, which can be accessed at <a href="http://sccms.sheridaninstitute.ca/sitecore/login/">sccms.sheridaninstitute.ca/sitecore/login/</a>.
 				</p>
-				<img src="img/password.png" alt="Recover or change your password by clicking 'Forgot Your Password' or 'Change Password'.">
+				<img src="img/password.png" alt="Recover or change your password by clicking Forgot Your Password or Change Password.">
 				<p>
-					To change your password, you’ll need to know your current password. Fill in the form and press Enter or click the Change Password button.
+					To change your password, you’ll need to know your current password. Fill in the form and press Enter or click the <u>Change Password</u> button.
 				</p>
-				<img src="img/password2.png" alt="The 'Change Password' screen.">
+				<img src="img/password2.png" alt="The Change Password screen.">
 				<p>
 					To recover your password, you’ll need to know your username. Enter it and you will receive an email to recover your password.
 				</p>
-				<img src="img/password3.png" alt="The 'Forgot Password' screen.">
+				<img src="img/password3.png" alt="The Forgot Password screen.">
 			</section>
 
 			<section>
 				<h2>About the Content Tree</h2>
 				<p>
-					You may find it useful to view all the pages and files in a hierarchical tree-like structure as if you were browsing files in Windows Explorer on your Windows computer (or Finder’s list and column views on Mac). In the Content Editor, click on the View tab and check the box for “Content Tree and the site tree/map will show up in a left-hand sidebar.
+					You may find it useful to view all the pages and files in a hierarchical tree-like structure as if you were browsing files in Windows Explorer on your Windows computer (or Finder’s list and column views on Mac). In the Content Editor, click on the View tab and check the box for Content Tree and the site tree/map will show up in a left-hand sidebar.
 				</p>
 				<img src="img/content-tree.png" alt="The Content Tree loads in the left sidebar.">
 			</section>
@@ -377,7 +395,7 @@
 			<section>
 				<h2>Searching for Content</h2>
 				<p>
-					You can search SiteCore’s Content Editor to find the page you are looking to edit. To search, click the “Navigate tab then the “Search button.
+					You can search SiteCore’s Content Editor to find the page you are looking to edit. To search, click the <u>Navigate</u> tab then the <u>Search</u> button.
 				</p>
 				<img src="img/search.png" alt="Pop-up shows your search results. Pages are indicated by a paper/document icon.">
 				<img src="img/content-editor2.png" alt="Clicking a Page from the search results brings up the Content Editor. If you are viewing with Content Tree enabled, you can also see the page’s position in the site map.">
@@ -397,14 +415,14 @@
 				</p>
 				<img src="img/photoshop.png" alt="Crop tool in the left-hand tool palette (left) and Image Size tool in a floating window (right).">
 				<p>
-					Make sure the “Constrain proportions box is checked off. A chainlink will show up to show that width and height are now linked. The image will skew and maintain the aspect ratio.
+					Make sure the Constrain proportions box is checked off. A chainlink will show up to show that width and height are now linked. The image will skew and maintain the aspect ratio.
 				</p>
 				<h3>Optimizing Images for Web</h3>
 				<p>
 					This step isn't absolutely necessary but it reduces the file size so that the page loads faster.
 				</p>
 				<p>
-					Once you are happy with your image and you are ready to upload it, it’s time to save it in a web-friendly format. Go into File and click on “Save for Web &amp; Devices. You can opt for a high-quality JPEG (for photographs and most graphics) or PNG-24 (for graphics with transparency). 
+					Once you are happy with your image and you are ready to upload it, it’s time to save it in a web-friendly format. Go into File and click on Save for Web &amp; Devices. You can opt for a high-quality JPEG (for photographs and most graphics) or PNG-24 (for graphics with transparency). 
 				</p>
 				<img src="img/photoshop2.png" alt="Saving for web &amp; devices.">
 				<p>
