@@ -24,20 +24,13 @@ $(document).ready(function(){
 		});
 	});
 
-
 	// All links in a new window
 	$("#content a").attr('target','_blank');
 	// $("#content a").after("<img src='img/new-window.png' class='new_win' />");
 	$("#content a").after("<span class='new_win'>&nbsp;&nbsp;&nbsp;</span>");
 
-
-	
-
-
 	// Table of Contents generation
 	buildTOC('h2','nav'); 
-
-
 
 	// To Table of Contents button
 	$('#gotonav_desktop').hide();
@@ -53,22 +46,14 @@ $(document).ready(function(){
 		});
 	});
 
-	
-
-	
-
-
 	// Automagically generate image captions and titles using alt tags
-
 	$('#content img:not([class=new_win])').each(function(){
 		var imgCaption = $(this).attr('alt');
 		$(this).after("<span class='caption'>" + imgCaption + "</span>");
 		$(this).attr('title', imgCaption);
 	});
 
-
 	// Go-to Table of Contents button control for desktop
-
 	var winWidth = $(window).width();
 	if (winWidth<720) {
 		$('#gotonav_desktop span').hide();
@@ -79,7 +64,6 @@ $(document).ready(function(){
 });
 
 // Functions 
-
 function buildTOC(findTag, whereGoes) {
 	var anchorCount = 0;
 	// Create a list that will hold the TOC
