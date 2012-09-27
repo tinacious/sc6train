@@ -27,7 +27,7 @@
 			<section>
 				<h2>Choosing a Web Browser</h2>
 				<p>
-					For Windows users, the SiteCore Content Management System (CMS) recommends using Internet Explorer 8. If you are running an older version of Internet Explorer, please update to Internet Explorer 8 or 9. You can check your version of Internet Explorer in the Help > About menu. If you do not see a toolbar, press Alt to display it. To update Internet Explorer, click <a href="http://windows.microsoft.com/en-us/internet-explorer/products/ie/home/">here</a>.
+					For Windows users, the SiteCore Content Management System (CMS) recommends using Internet Explorer 8 or higher. If you are running an older version of Internet Explorer, please update to Internet Explorer 8 or 9. You can check your version of Internet Explorer in the Help &gt; About menu. If you do not see a toolbar, press Alt on your keyboard to display it. To update Internet Explorer, click <a href="http://windows.microsoft.com/en-us/internet-explorer/products/ie/home/">here</a>.
 				</p>
 				<p>
 					If you are on Mac, use the most recent version of either Safari or Firefox. To update Firefox, click <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.mozilla.org%2Fen-US%2Ffirefox%2Ffx%2F%23desktop&sa=D&sntz=1&usg=AFQjCNEezXQ_WQyi5k2c3rrmLFytEbZc7w">here</a>. If Safari is outdated, it can be updated by running Software Update on your Mac. You may experience timeouts with Google Chrome on a slow server.
@@ -46,15 +46,15 @@
 				<ol>
 					<li>Enter your login credentials</li>
 					<li>Click <u>Options</u> to expand the User Interface menu</li>
-					<li>Choose which mode you would like to use (<u>Desktop</u>, <u>Content Editor</u> or <u>Page Editor</u>)</li>
+					<li>Choose which user interface mode you would like to use (<u>Desktop</u>, <u>Content Editor</u> or <u>Page Editor</u>)</li>
 					<li>Click <u>Login</u> to load the desired editor</li>
 				</ol>
 				<img src="img/login-window.png" alt="SiteCore 6 login screen.">
 				<p>
-					You may already be familiar with the Content Editor and Desktop options. New in version 6 is the Page Editor view. Page Editor mode allows you to edit the site while browsing. It is similar to and replaces the Web Edit option.
+					You may already be familiar with the Content Editor and Desktop views. New in version 6 is the Page Editor view. Page Editor view allows you to edit the site while browsing. It is similar to and replaces the Web Edit option.
 				</p>
 				<p>
-					Once you login to SiteCore Page Editor, you can navigate to the page you want to edit to edit it. Once you are at the page, click <u>Check-out</u> to lock the item. This will lock the page and only you can edit it until you check it in again. This is similar to checking out a library book where only one person can check it out at a time. 
+					Once you login to the SiteCore Page Editor, you can navigate to the page you want to edit to edit it. Once you are at the page, click <u>Edit</u> or <u>Check-out</u> to lock the item. This will lock the page and only you can edit it until you check it in again. This is similar to checking out a library book where only one person can check it out at a time. 
 				</p>
 				<p>
 					If you do not see the <u>Edit</u> or <u>Check-out</u> button, it could be because the ribbon is collapsed. To expand the ribbon, you can click on either of the tabs (e.g. <u>Home</u>, <u>View</u>, etc.) or the down arrow at the far right.
@@ -66,7 +66,7 @@
 				</p>
 				<img src="img/enable-nav-bar.png" alt="In the View tab, selecting the Navigation Bar checkbox displays the Navigation Bar (previously called Breadcrumb) and gives you the option to Edit the page in the Content Editor">
 				<p>
-					Clicking the second one—the one in the Navigation Bar—will take you to the Content Editor. When you click the first one, nothing happens. This appears to be a bug in Page Editor mode. 
+					Clicking the second one—the one in the Navigation Bar—will take you to the Content Editor. When you click the first one, nothing happens. This appears to be a bug in Page Editor view. 
 				</p>
 				<img src="img/edit-buttons.png" alt="Clicking the second Edit button will take you to the Content Editor.">
 				<p>
@@ -74,7 +74,7 @@
 				</p>
 				<h3>Quick Overview</h3>
 				<p>
-					Please see the video 01 - Login and Edit (1 min 34 sec) for a quick demonstration on navigating to a page and editing the content in Page Editor mode.
+					Please see the video 01 - Login and Edit (1 min 34 sec) for a quick demonstration on navigating to a page and editing the content in Page Editor view.
 				</p>
 				<!-- insert video -->
 
@@ -82,7 +82,7 @@
 
 			<section>
 				<h2>Quick Reference Guide</h2>
-				<h3>Content Editor mode</h3>
+				<h3>Content Editor view</h3>
 				<ol>
 					<li>Main toolbar with multiple tabs. Each tab has its own set of options. <u>Save</u> and <u>Edit</u> appear on all tabs.</li>
 					<li>Content Tree of the Media Library</li>
@@ -111,9 +111,21 @@
 					To paste text without affecting the default text layout, use the <u>Paste from Word, strip font</u> button in the rich text editor. It is the clipboard icon with a W.
 				</p>
 				<p>
-					If you are in Page Editor mode, the floating palette you will see has less options. You will need to use the rich text editor pop-up by clicking the <u>Document icon</u> (the first icon on the left). 
+					If you are in Page Editor view, the floating palette you will see has less options. You will need to use the rich text editor pop-up by clicking the <u>Document icon</u> (the first icon on the left). 
 				</p>
 				<img src="img/ce-popup.png" alt="Clicking the Document icon brings up the Content Editor pop-up where you can paste without formatting.">
+				<p>
+					If you need more options than the Page Editor provides, you can do one of the following:
+				</p>
+				<ol>
+					<li>Click the <u>Document icon</u> in the floating palette in the Page Editor to load the rich text editor in a pop-up window (first image below)</li>
+					<li>Click the <u>View</u> tab and check off the <u>Navigation Bar</u> box to display the navigation bar.
+						<ul>
+							<li>Click <u>Edit</u> to be taken to the full Content Editor (second image below)</li>
+						</ul>
+					</li>
+				</ol>
+				<img src="img/doc-icon.png" alt="Content Editor pop-up loads after clicking the Document icon.">
 			</section>
 
 			<section>
@@ -127,7 +139,7 @@
 			<section>
 				<h2>Uneditable Text</h2>
 				<p>
-					In Page Editor mode, you may come across a content block that you cannot edit. It may be that: 
+					In Page Editor view, you may come across a content block that you cannot edit. It may be that: 
 				</p>
 				<ul>
 					<li>the text is hard-coded into the site design and cannot be changed through the CMS</li>
@@ -155,19 +167,7 @@
 					If this item is to show up in the right sidebar column, check the box.
 				</p>
 				<p>
-					If you need more options than the Page Editor provides, you can do one of the following:
-				</p>
-				<ul>
-					<li>Click the <u>Document icon</u> in the floating palette in the Page Editor to load the rich text editor in a pop-up window (first image below)</li>
-					<li>Click the <u>View</u> tab and check off the <u>Navigation Bar</u> box to display the navigation bar.
-						<ul>
-							<li>Click <u>Edit</u> to be taken to the full Content Editor (second image below)</li>
-						</ul>
-					</li>
-				</ul>
-				<img src="img/doc-icon.png" alt="Content Editor pop-up loads after clicking the Document icon.">
-				<p>
-					Once you save your changes in the split-pane view, you will be returned to Page Editor mode where you can resume navigating and editing pages.
+					Once you save your changes in the split-pane view, you will be returned to Page Editor view where you can resume navigating and editing pages.
 				</p>
 			</section>
 
@@ -177,7 +177,7 @@
 				<p>
 					Linking throughout the Sheridan site can be done through the Page Editor. Simply select some text and click the Insert Link button on the floating palette. 
 				</p>
-				<img src="img/int-links.png" alt="Floating palette in Page Editor mode allows you to link to internal pages and files.">
+				<img src="img/int-links.png" alt="Floating palette in Page Editor view allows you to link to internal pages and files.">
 				<p>
 					The link button in the floating palette will allow you to link internally to the site. 
 				</p>
@@ -198,31 +198,31 @@
 			</section>
 
 			<section>
-				<h2>Uploading Images and other media to the Media Library</h2>
+				<h2>Uploading Images to the Media Library</h2>
 				<p>
 					Files will need to be added to the Media Library <em>before</em> being able to insert them into your pages. 
 				</p>
 				<p>
-					It is recommended to add images to the Media Library through Page Editor mode as doing it this way will add it to the correct folder/directory for that section.
+					It is recommended to add images to the Media Library through Page Editor view as doing it this way will add it to the correct folder/directory for that section.
 				</p>
-				<h3>From the Page Editor mode</h3>
+				<h3>From the Page Editor view</h3>
 				<p>
-					To access the Media Library from Page Editor mode, navigate to the page you want to edit and click into an editable content area.
+					To access the Media Library from Page Editor view, navigate to the page you want to edit and click into an editable content area.
 				</p>
 				<p>
 					In the floating palette, click the image icon, which is indicated in the following image with a <span class="pink">pink arrow</span>.
 				</p>
-				<img src="img/img-page-editor.png" alt="Add images in Page Editor mode using the floating palette.">
+				<img src="img/img-page-editor.png" alt="Add images in Page Editor view using the floating palette.">
 				<p>
 					Once you click the image icon, you will have the chance to upload an image to add in this content block or choose from already uploaded images. Click the <u>Upload</u> button. A small box will pop up and from here you can add an image. Click <u>Browse</u> to select an image from your computer. 
 				</p>
 				<p>
-					If you only want to upload images and not add them to a content block, you can access the Media Library through the Content Editor. To enter the Content Editor from Page Editor mode, click on <u>Edit</u>. See the <span class="turq">turquoise arrow</span> in the above image. See the following section for more information.
+					If you only want to upload images and not add them to a content block, you can access the Media Library through the Content Editor. To enter the Content Editor from Page Editor view, click on <u>Edit</u>. See the <span class="turq">turquoise arrow</span> in the above image. See the following section for more information.
 				</p>
-				<img src="img/image-upload.png" alt="Uploading an image while in Page Editor mode using the floating palette.">
-				<h3>From the Content Editor mode</h3>
+				<img src="img/image-upload.png" alt="Uploading an image while in Page Editor view using the floating palette.">
+				<h3>From the Content Editor view</h3>
 				<p>
-					If you reached the Content Editor from Page Editor mode, you will see a split-pane version. The Media Library can be accessed through the bottom toolbar in the Content Editor or through the menu accessible using the blue menu at the top right corner of the page. Both are indicated by <span class="pink">pink arrows</span> in the following image.
+					If you reached the Content Editor from Page Editor view, you will see a split-pane version. The Media Library can be accessed through the bottom toolbar in the Content Editor or through the menu accessible using the blue menu at the top right corner of the page. Both are indicated by <span class="pink">pink arrows</span> in the following image.
 				</p>
 				<p>
 					Using the Media Library from the Content Editor is useful to see all media, not just page-specific media.
@@ -276,14 +276,14 @@
 			</section>
 
 			<section>
-				<h2>Changing Images in Page Editor Mode</h2>
+				<h2>Changing Images in Page Editor view</h2>
 				<p>
-					Some images can be changed/re-referenced but some cannot. Click on the image, then the image icon to change the source image. A box will pop up allowing you to upload an image from your computer or choose from one of your uploaded files. Uploading images using Page Editor mode have been described in the previous section. 
+					Some images can be changed/re-referenced but some cannot. Click on the image, then the image icon to change the source image. A box will pop up allowing you to upload an image from your computer or choose from one of your uploaded files. Uploading images using Page Editor view have been described in the previous section. 
 				</p>
 				<p>
-					The window that pops up is a smaller view of the Media Library called the Media Browser. The difference between the Media Library and the Media Browser is the presentation: the Media Browser is presented in a pop-up window in Page Editor mode. You will have access to all of the media uploaded to this section rather than the full Media Library.
+					The window that pops up is a smaller view of the Media Library called the Media Browser. The difference between the Media Library and the Media Browser is the presentation: the Media Browser is presented in a pop-up window in Page Editor view. You will have access to all of the media uploaded to this section rather than the full Media Library.
 				</p>
-				<img src="img/img-page-editor.jpeg" alt="Editing images in Page Editor mode.">
+				<img src="img/img-page-editor.jpeg" alt="Editing images in Page Editor view.">
 				<p>
 					It is recommended that you do not use SiteCore for image editing (cropping, resizing, etc.) and that you instead use photo editing software like Photoshop. See the section <a href="#editing-images">Editing Images for SiteCore</a> for instructions.
 				</p>
@@ -303,19 +303,19 @@
 				<p>
 					Once you have made your changes, you will need to save them and Submit them to a moderator. This will move the document up in the workflow. A moderator is an editor with higher privileges.
 				</p>
-				<img src="img/publish-not-visible.jpg" alt="Changes saved will not be live right away. The document moves up in the workflow. (Content Editor mode)">
+				<img src="img/publish-not-visible.jpg" alt="Changes saved will not be live right away. The document moves up in the workflow. (Content Editor view)">
 				<!-- <p>
 					Click Check-In once you are done editing it to unlock it from your editing privilege so that others may edit it if need be.
 				</p>
 				<img src="img/checkin.png" alt="Submit and Check-In options in the Edit menu."> -->
 				<p>
-					To view your Workbox while in Page Editor mode, click on the Home tab and then click Workbox. The top menu bar may be collapsed and you may not see the buttons below. Click on it to expand it and see the options.
+					To view your Workbox while in Page Editor view, click on the Home tab and then click Workbox. The top menu bar may be collapsed and you may not see the buttons below. Click on it to expand it and see the options.
 				</p>
-				<img src="img/workbox.png" alt="Accessing the Workbox from Page Editor mode.">
+				<img src="img/workbox.png" alt="Accessing the Workbox from Page Editor view.">
 				<p>
 					To view your Workbox in Content Editor view, click on the blue arrow in the top right corner of the screen, or click on Workbox in the bottom toolbar.
 				</p>
-				<img src="img/workbox2.png" alt="Accessing the Workbox from Content Editor mode.">
+				<img src="img/workbox2.png" alt="Accessing the Workbox from Content Editor view.">
 				<h3>Moderator Privileges</h3>
 				<p>
 					If you are a moderator, you will have the ability to approve the editing and creation of pages in your workflow. If set in your notification email settings (default), you should receive an email notification when a post is ready to be addressed.
@@ -446,7 +446,7 @@
 				<code>
 					?sc_mode=edit
 				</code>
-				<img src="img/url.png" alt="Once logged in, quickly edit the page in Page Editor mode by adding text to the URL.">
+				<img src="img/url.png" alt="Once logged in, quickly edit the page in Page Editor view by adding text to the URL.">
 				<p>
 					Once you reload the page with the aforementioned URL suffix, Page Editor will be enabled on this page and you will be able to modify its editable content blocks. 
 				</p>
@@ -455,7 +455,7 @@
 				</p>
 				<h3>Quickly Accessing the Content Editor</h3>
 				<p>
-					Page Editor mode is great for navigating and editing small blocks of content but if you find that you want to quickly access the content editor, add the following text after <code>/sitecore/</code> to the URL. 
+					Page Editor view is great for navigating and editing small blocks of content but if you find that you want to quickly access the content editor, add the following text after <code>/sitecore/</code> to the URL. 
 				</p>
 				<code>
 					shell/Applications/Content%20Manager/
