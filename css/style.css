@@ -55,7 +55,9 @@ h3 {
 a {
   color: #2173ab;
 }
-p {
+p,
+ul,
+ol {
   line-height: 1.8em;
   margin-bottom: 1em;
 }
