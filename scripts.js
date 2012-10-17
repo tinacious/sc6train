@@ -48,9 +48,11 @@ $(document).ready(function(){
 
 	// Automagically generate image captions and titles using alt tags
 	$('#content img:not([class=new_win])').each(function(){
-		var imgCaption = $(this).attr('alt');
-		$(this).after("<span class='caption'>" + imgCaption + "</span>");
-		$(this).attr('title', imgCaption);
+		if($('#content img').attr('alt')) {
+			var imgCaption = $(this).attr('alt');
+			$(this).after("<span class='caption'>" + imgCaption + "</span>");
+			$(this).attr('title', imgCaption);	
+		}
 	});
 
 	// Go-to Table of Contents button control for desktop
