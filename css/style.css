@@ -11,18 +11,6 @@ body:after {
 body:after {
   clear: both;
 }
-/*---------------------------------------------------
-    LESS Elements 0.6
-  ---------------------------------------------------
-    A set of useful LESS mixins by Dmitry Fadeyev
-    Special thanks for mixin suggestions to:
-      Kris Van Herzeele,
-      Benoit Adam,
-      Portenart Emile-Victor,
-      Ryan Faerman
-
-    More info at: http://lesselements.com
------------------------------------------------------*/
 body {
   font-family: verdana, sans-serif;
   font-size: 0.9em;
@@ -99,8 +87,6 @@ code {
   z-index: 996;
   top: 0;
   width: 100%;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 #site {
