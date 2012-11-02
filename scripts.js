@@ -25,9 +25,9 @@ $(document).ready(function(){
 	});
 
 	// All links in a new window
-	$("#content a").attr('target','_blank');
+	$("#content a[href#=http]").attr('target','_blank');
 	// $("#content a").after("<img src='img/new-window.png' class='new_win' />");
-	$("#content a").after("<span class='new_win'>&nbsp;&nbsp;&nbsp;</span>");
+	$("#content a[href#=http]").after("<span class='new_win'>&nbsp;&nbsp;&nbsp;</span>");
 
 	// Table of Contents generation
 	buildTOC('h2','nav'); 
