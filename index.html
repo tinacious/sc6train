@@ -42,9 +42,7 @@
 					You will get an error for an invalid security certificate. In this case it is safe to click Continue regardless of the security warning.
 				</p>
 				<img src="img/ssl1.png" alt="Invalid certificate warning.">
-				<p>
-					In Firefox to continue you will need to add this invalid certificate to a list of trusted websites. You will be guided by the browser on how to do this. You should not be prompted again in Firefox if you do this.
-				</p>
+				
 				<p>
 					In Internet Explorer, if you would like the warning to stop, follow these directions (optional): 
 				</p>
@@ -69,6 +67,13 @@
 					<li>Click <u>Next</u> then <u>Finish</u></li>
 					<li>Close and restart your browser</li>
 				</ol>
+				<p>
+					In Firefox to continue you will need to add this invalid certificate to a list of trusted websites. You will be guided by the browser on how to do this. You should not be prompted again in Firefox if you do this.
+				</p>
+				<p>
+					Click <u>I Understand the Risks</u> and click <u>Add Exception</u>. In the next window click <u>Confirm Security Exception</u>.
+				</p>
+				<img src="img/firefox.png" alt="Click I Understand the Risks, then Add Exception then Confirm Security Exception">
 			</section>
 
 			<section>
@@ -115,13 +120,20 @@
 			<section>
 				<h2>Editing a Page in Page Editor View</h2>
 				<p>
-					You can click on the editable content areas to edit the page. Not all areas of the page are editable, and often you can only edit blocks of text and image references, not their layout and arrangement.
-				</p>
-				<p>
 					Once you login to the SiteCore Page Editor, you can navigate to the page you want to edit to edit it. You will need to double click to navigate from Page Editor view. Once you are at the page, hovering your mouse around the page will indicate which content blocks are editable by highlighting these areas with a dotted outline. 
 				</p>
 				<p>
+					Once you have arrived at the page you would like to edit, click <u>Lock</u> in the Navigation Bar. If you are unable to lock it it means that someone has already locked it. You must wait for them to unlock it before you can proceed to edit.
+				</p>
+				<img src="img/lock.png" alt="Click Lock to lock an item before you begin editing">
+				<p>
+					You can click on the editable content areas to edit the page. Not all areas of the page are editable, and often you can only edit blocks of text and image references, not their layout and arrangement.
+				</p>
+				<p>
 					To edit text, simply click in an editable area and begin typing. Click the <u>Save</u> icon when you are done.
+				</p>
+				<p>
+					Once you are done editing all the pages you need to edit, you will need to submit your work. Please see the section titled <a href="#saving">Saving, Submitting and Publishing Changes</a>. If you are not done editing and need to learn how to do something else, please read on.
 				</p>
 				<img src="img/page-editor-save.png" alt="Once you are done, click the Save icon">
 				<h3>Copying and Pasting: Removing Text Formatting</h3>
@@ -145,6 +157,9 @@
 				</p>
 				<p>
 					Click the <u>Save</u> icon in the top left corner, indicated by the <span class="pink">pink arrow</span>. It will ask you to confirm your changes. Click OK. If you are finished editing, you can close the Page Editor by clicking <u>Close</u>. This does not log you out. If you would like to close and logout, click the <u>Log off</u> button in the ribbon, indicated by the <span class="turq">turquoise box</span>.
+				</p>
+				<p>
+					Remember that you still need to submit your changes to make sure they will be viewable. See the section on <a href="#saving">Saving, Submitting and Publishing</a>.
 				</p>
 				<img src="img/save-logoff-close.png" alt="Save, Log off and Close buttons">
 				<!-- <p>
@@ -182,12 +197,16 @@
 				<p>
 					To link to a document (PDF, DOC, PPT, etc.), you will need to upload it to the Media Library first. This is explained in the next section. You would link to a document the same way you would link to an internal page.
 				</p>
+				<p>
+					If for some reason you are unable to create an internal link in this manner as some users have experienced issues with the creation of an internal link not registering, click <u>More</u> on the floating palette to see the split-pane view. Then, double click in the editor to get the rich text editor. Next, create then select the text you want to link and click the <u>Sitecore Link</u> icon. This is indicated using a <span class="pink">pink arrow</span>. This will allow you to choose a page from the content tree. The Hyperlink Manager icon, which we will discuss next, is indicated by a <span class="turq">turquoise arrow</span>.
+				</p>
+				<img src="img/internal-link-new.png" alt="Click SiteCore Link button to create an internal link">
 				<h3>External and E-mail links</h3>
 				<p>
 					A hyperlink is another way of saying link. There are a variety of links/hyperlinks that you can create. We will only be creating external links and e-mail links.
 				</p>
 				<p>
-					If you want to provide a link to an external website address or an email address link, you will need to click the <u>Document</u> icon to be taken to the rich text editor. The <u>Document</u> icon is the first button on the left in the Floating Palette. 
+					If you want to provide a link to an external website address or an email address link, you will need to click the <u>Edit this Text</u> icon to be taken to the rich text editor. The <u>Edit this Text</u> icon is the first button on the left in the Floating Palette. 
 				</p>
 				<p>
 					An external link is a link that goes to another website. An e-mail link is a link that once clicked will load your default email client to send an email to the specified email address.
@@ -196,7 +215,7 @@
 					After clicking the <u>Edit the Text</u> icon in the Floating Palette, you will see the rich text editor. From here, click the link button with a globe on it to open the hyperlink manager.
 				</p>
 				<p>
-					Select the correct tab of the type of link you would like to create. In the image below, we are creating a hyperlink. Different options will be visible for the different types of links.
+					Select the correct tab of the type of link you would like to create. In the image below, we are creating an external link. Different options will be visible for the different types of links.
 				</p>
 				<p>
 					Properly creating links is important. Improperly creating links can cause 404 Page Not Found errors. Using the hyperlink manager will properly create these links for you so it is important that you use it create the type of link you want.
@@ -216,7 +235,7 @@
 				<img src="img/ext-links.png" alt="Click Edit Text then Hyperlink Manager to manage external and email links.">
 				<h4>E-mail Links</h4>
 				<p>
-					All email links must be preceded in their code by <code>mailto:</code> in order to function properly. Setting up the link using the E-mail tab will do this for you. Press OK to add the link. Press Accept to add your changes. Click Save to save your changes.
+					To add an email link, select the text, open the <u>Hyperlink Manager</u>, type in the email address and click OK. Press Accept to add your changes. Click Save to save your changes.
 				</p>
 				<img src="img/email-links.png" alt="The E-Mail link tab.">
 			</section>
@@ -244,11 +263,11 @@
 					Uploading and Inserting images are two different steps. You must first upload an image before you can insert it. If your image is already uploaded, you can insert it.
 				</p>
 				<p>
-					If your image is not uploaded yet, navigate to the folder you want to upload it to and click the <u>Upload</u> button. A small box will pop up and from here you can add an image. Click <u>Browse</u> to select an image from your computer. Click <u>Upload</u> to upload it to the Media Library.
+					If your image is not uploaded yet click the <u>Upload</u> button. A small box will pop up and from here you can add an image. Click <u>Browse</u> to select an image from your computer. Click <u>Upload</u> to upload it to the Media Library.
 				</p>
-				<p>
+				<!-- <p>
 					If you only want to upload images and not add them to a content block, you can access the Media Library through the Content Editor. To enter the Content Editor from Page Editor view, click on <u>Edit</u>. See the <span class="turq">turquoise arrow</span> in the above image. See the following section for more information.
-				</p>
+				</p> -->
 				<img src="img/image-upload.png" alt="Uploading an image while in Page Editor view using the floating palette.">
 				
 			</section>
@@ -314,7 +333,7 @@
 				<img src="img/img-attr-pe.png" alt="Add alt text when initially inserting an image.">
 			</section>
 
-			<section>
+			<!-- <section>
 				<h2>Changing/Replacing Images in Page Editor</h2>
 				<p>
 					Some images can be changed/re-referenced but some cannot. Click on the image, then the image icon to change the source image. A box will pop up allowing you to upload an image from your computer or choose from one of your uploaded files. Uploading images using Page Editor view have been described in the previous section. 
@@ -329,9 +348,9 @@
 				<p>
 					Once you upload media you <em>must</em> publish it otherwise it will result in a broken link. To do so, click on Publish in the ribbon. Save and Close.
 				</p>
-			</section>
+			</section> -->
 
-			<section>
+			<section id="saving">
 				<h2>Saving, Submitting and Publishing Changes</h2>
 				<p>
 					After an item is edited and before an item can be published, it must move through the workflow.
@@ -346,7 +365,7 @@
 					</li>
 				</ul>
 				<p>
-					Your changes will not be visible right away. They need to be approved by someone with more privileges.
+					Your changes will not be visible on the public site right away. They need to be approved by someone with more privileges in the Workflow.
 				</p>
 				<img src="img/publish-not-visible.jpg" alt="Changes saved will not be live right away. The document moves up in the workflow. (Content Editor view)">
 				<p>
@@ -359,22 +378,32 @@
 					Click Check-In once you are done editing it to unlock it from your editing privilege so that others may edit it if need be.
 				</p>
 				<img src="img/checkin.png" alt="Submit and Check-In options in the Edit menu."> -->
+				<h4>Workbox</h4>
 				<p>
 					To view your Workbox while in Page Editor view, click on the Home tab and then click Workbox. The top menu bar may be collapsed and you may not see the buttons below. Click on it to expand it and see the options.
 				</p>
 				<img src="img/workbox.png" alt="Accessing the Workbox from Page Editor view.">
-				<p>
+				<!-- <p>
 					To view your Workbox in Content Editor view, click on the blue arrow in the top right corner of the screen, or click on Workbox in the bottom toolbar.
 				</p>
-				<img src="img/workbox2.png" alt="Accessing the Workbox from Content Editor view.">
+				<img src="img/workbox2.png" alt="Accessing the Workbox from Content Editor view."> -->
 				<p>
 					Once you are in the Workbox, you will see all the items that you can edit under the Edit section, indicated by the <span class="pink">pink arrow</span>. If you have the privilege to publish or approve pages, you will see an Approval section. These sections can be expanded and collapsed using the arrow on the right which is indicated by the <span class="turq">turquoise arrow</span>.
 				</p>
 				<img src="img/workbox-edit-approve.png" alt="Edit and Approve sections in a workflow">
+				<h4>Workflows</h4>
 				<p>
-					To see the items in a workflow, check off that workflow, indicated by the <span class="pink">pink arrow</span>. Once you select a workflow, all of the items in that workflow should appear in the lower pane. From here, you can open, preview or submit the item. To submit the item, click <u>Submit</u>, as indicated by the <span class="turq">turquoise arrow</span>. The <u>Diff</u> button refers to Versions. See the section below for more information on Versions.
+					To see the items in a workflow, check off that workflow, indicated by the <span class="pink">pink arrow</span>. Once you select a workflow, all of the items in that workflow should appear in the lower pane. From here, you can open, preview or submit the item. To submit the item, click <u>Submit</u>, as indicated by the <span class="turq">turquoise arrow</span>. The <u>Diff</u> button refers to Versions. <!-- See the section below for more information on Versions. -->
 				</p>
 				<img src="img/workbox3.png" alt="Submitting pages to be moved up in the workflow">
+				<h4>Final Step: Unlocking</h4>
+				<p>
+					Once it is saved and submitted up the Workflow and you are done editing, you will need to go to My Items, indicated by a <span class="pink">pink arrow</span>, and unlock them so that others with shared privileges can have access to them.
+				</p>
+				<p>
+					<b>It is very important that you unlock an item after you have edited it so that it can become available for others who share it.</b>
+				</p>
+				<img src="img/unlocking.png" alt="Click My Items and Unlock Item or Unlock All, indicated by a turquoise arrow">
 				<h3>Approver Privileges: Submitting, Publishing &amp; Rejecting</h3>
 				<p>
 					If you are an Approver, you will have the ability to approve the editing and creation of pages in your workflow. If set in your notification email settings (default), you should receive an email notification when a post is ready to be addressed.
@@ -516,7 +545,7 @@
 			</section>
 
 
-			<section>
+			<!-- <section>
 				<h2>Versions</h2>
 				<p>
 					SiteCore tracks changes to pages under the Versions tab. You can edit from, revert back to, delete or hide a previous version. 
@@ -533,7 +562,7 @@
 				<p>
 					You can also use this section to have a version only published for a certain amount of time. For example, if you have a 1-week special event happening in a month, you can create the content now, set it to be published at a later date, and have that version expire after the event is over.
 				</p>
-			</section>
+			</section> -->
 
 			<section>
 				<h2>Changing Your Password</h2>
